@@ -1,3 +1,3 @@
 # Wedding Website
-_See [neeling4aanchal.com](http://neeling4aanchal.com/)
+_See [neeling4aanchal.com](https://neeling4aanchal.com/)
 
