@@ -252,7 +252,7 @@ Hero
 ========================================================================== */
 .hero {
   min-height: 750px;
-  background: url('../img/First.png') center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../img/First.png') center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -282,7 +282,7 @@ Hero
   }
   .hero-content img {
     width: 55%;
-    margin-bottom: 12%;
+    margin-bottom: 3%;
   }
 }
 .navigation {
@@ -309,6 +309,7 @@ header {
     color: $txt-light;
     text-transform: uppercase;
     font-size: $nav-font-size;
+    font-weight: bold;
 
     &.login {
       margin-right: 20px;
@@ -318,7 +319,7 @@ header {
     display: inline-block;
   }
   .logo img {
-    height: 19px;
+    height: 35px;
   }
   ul.primary-nav {
     margin: 0 0 0 75px;
@@ -359,7 +360,7 @@ header {
   .member-actions {
     position: absolute;
     right: 0;
-    top: 41px;
+    top: 45px;
     transition: all 300ms ease-in-out;
   }
 }
@@ -898,4 +899,19 @@ body.modal-open {
 }
 .modal-body {
   padding:25px;
+}
+
+
+/* ==========================================================================
+Additional things added
+========================================================================== */
+.date-header {
+  color: $white-color;
+  text-align: center;
+  padding-bottom: 0px;
+}
+
+.countdown {
+  color: $white-color;
+  text-align: center;
 }
