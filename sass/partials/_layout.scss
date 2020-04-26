@@ -2,9 +2,9 @@
 
 $section-padding: 40px 0;
 
-section.intro, section.features-extra {
+section.intro {
 	background: $section-light;
 }
-section.features, section.events, section.blog, section.rsvp {
+section.events, section.rsvp, section.gallery {
 	background: $section-dark;
 }
