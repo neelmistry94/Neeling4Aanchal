@@ -259,11 +259,6 @@ Hero
   background-size: cover;
   position: relative;
 
-  /*.rsvp-btn {
-    position: absolute;
-    bottom: 100px;
-    left: 50%;
-  }*/
   .down-arrow a {
     color: $txt-light;
   }
@@ -796,6 +791,7 @@ RSVP form
       border-radius: 3px;
       width: 100%;
       font-size: 13px;
+      font-weight: bold;
     }
     .form-input-group {
       width: 100%;
