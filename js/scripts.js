@@ -191,11 +191,11 @@ $(document).ready(function () {
         e.preventDefault();
 
         var data = $(this).serialize();
-
+console.log(data)
         $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
         
         if (yesReponse == true) {
-            $.post('https://script.google.com/macros/s/AKfycbzUqz44wOat0DiGjRV1gUnRf4HRqlRARWggjvHKWvqniP7eVDG-/exec', data)
+            $.post('https://script.google.com/macros/s/AKfycbx_g498XSib01ImX4Bo7-LmM5i9U64wy_LbzLl12mEIl0epvfg/exec', data)
                 .done(function (data) {
                     console.log(data);
                     if (data.result === "error") {
