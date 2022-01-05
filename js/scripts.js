@@ -187,34 +187,15 @@ $(document).ready(function () {
         noResponse = true
     })
 
-    $('#rsvp-form').on('submit', function (e) {
-        e.preventDefault();
+    $('#rsvp-form').on('click', function (e) {
+    
 
-        var data = $(this).serialize();
-console.log(data)
+        console.log(e)
         $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
-        
-        if (yesReponse == true) {
-            $.post('https://script.google.com/macros/s/AKfycbx_g498XSib01ImX4Bo7-LmM5i9U64wy_LbzLl12mEIl0epvfg/exec', data)
-                .done(function (data) {
-                    console.log(data);
-                    if (data.result === "error") {
-                        $('#alert-wrapper').html(alert_markup('danger', data.message));
-                    } else {
-                        $('#alert-wrapper').html('');
-                        $('#rsvp-modal').modal('show');
-                    }
-                })
-                .fail(function (data) {
-                    console.log(data);
-                    $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> There is some issue with the server. '));
-                });
-        } else if (noResponse == true) {
+        console.log("HI")
 
-        }
+        return false
         
-        yesReponse = false
-        noResponse = false
     });
 
 });
